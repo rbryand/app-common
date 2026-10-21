@@ -1,4 +1,4 @@
-package org.elorrieta.common.modelo;
+package org.elorrieta.gymcommon.modelo;
 
 /** Data sent to the server to create a new user */
 public class Registro {

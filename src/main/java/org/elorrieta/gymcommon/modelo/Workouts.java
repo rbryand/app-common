@@ -1,10 +1,8 @@
-package org.elorrieta.common.modelo;
+package org.elorrieta.gymcommon.modelo;
 
 import java.io.Serializable;
-import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class Workouts implements Serializable {
     private static final long serialVersionUID = 1L;

@@ -1,5 +1,5 @@
 
-package org.elorrieta.common.modelo;
+package org.elorrieta.gymcommon.modelo;
 
 public class User {
 

@@ -1,4 +1,4 @@
-package org.elorrieta.common.modelo;
+package org.elorrieta.gymcommon.modelo;
 /*
  * Copyright 2026 nombreGrupoDam
  */

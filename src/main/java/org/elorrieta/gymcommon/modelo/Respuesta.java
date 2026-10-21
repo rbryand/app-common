@@ -1,4 +1,4 @@
-package org.elorrieta.common.modelo;
+package org.elorrieta.gymcommon.modelo;
 
 /** What the server answers. If ok is false, the error says why. */
 public class Respuesta {

@@ -1,4 +1,4 @@
-package org.elorrieta.common.modelo;
+package org.elorrieta.gymcommon.modelo;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
