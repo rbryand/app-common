@@ -1,8 +1,10 @@
 package org.elorrieta.gymcommon.modelo;
 
 import java.io.Serializable;
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Workouts implements Serializable {
     private static final long serialVersionUID = 1L;
@@ -45,6 +47,20 @@ public class Workouts implements Serializable {
         }
         
         filtrados= new Workouts(resultado);
+        return filtrados;
+    }
+    
+    public Workouts filtrarHastaNivel(int nivel) {
+        List<Workout> resultado = new ArrayList<>();
+        Workouts filtrados;
+
+        for (Workout w : workouts) {
+            if (w.getNivel() <= nivel) {
+                resultado.add(w);
+            }
+        }
+
+        filtrados = new Workouts(resultado);
         return filtrados;
     }
     

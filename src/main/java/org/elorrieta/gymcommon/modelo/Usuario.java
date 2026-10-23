@@ -1,11 +1,14 @@
 package org.elorrieta.gymcommon.modelo;
+
+import java.io.Serializable;
+
 /*
  * Copyright 2026 nombreGrupoDam
  */
 
+public class Usuario implements Serializable{
 
-public class Usuario {
-
+	private static final long serialVersionUID = 1L;
 	private String nombre;
 	private String apellidos;
 	private String email;
@@ -16,8 +19,6 @@ public class Usuario {
 	public Usuario() {
 	}
 
-	
-	
 	public Usuario(String nombre, String apellidos, String email, String contrasena, String fechaNacimiento,
 			int nivel) {
 		super();
@@ -28,8 +29,6 @@ public class Usuario {
 		this.fechaNacimiento = fechaNacimiento;
 		this.nivel = nivel;
 	}
-
-
 
 	public String getNombre() {
 		return nombre;
@@ -55,6 +54,14 @@ public class Usuario {
 		this.email = email;
 	}
 
+	public String getContrasena() {
+		return contrasena;
+	}
+
+	public void setContrasena(String contrasena) {
+		this.contrasena = contrasena;
+	}
+
 	public String getFechaNacimiento() {
 		return fechaNacimiento;
 	}
@@ -70,26 +77,7 @@ public class Usuario {
 	public void setNivel(int nivel) {
 		this.nivel = nivel;
 	}
-
-	public String getContrasena() {
-		return contrasena;
-	}
-
-	public void setContrasena(String contrasena) {
-		this.contrasena = contrasena;
-	}
-
-	public String getContrasenaHash() {
-		return contrasena;
-	}
-
-
-
-	@Override
-	public String toString() {
-		return "Usuario [nombre=" + nombre + ", apellidos=" + apellidos + ", email=" + email + ", contrasena="
-				+ contrasena + ", fechaNacimiento=" + fechaNacimiento + ", nivel=" + nivel + "]";
-	}
 	
-	
+ 
+ 
 }
